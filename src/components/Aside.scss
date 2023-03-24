@@ -1,0 +1,92 @@
+.side {
+    flex: 1;
+    min-height: 100vh;
+    border-right: 1px solid lightgray;
+    
+
+    .top {
+        pad: 5px;
+        height: 50px;
+        color: darkblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+       
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .middle {
+        ul {
+            padding-left: 15px;
+        }
+        li {
+            
+           
+            transition: all 0.2s;
+         padding: 3px;
+            display: flex;
+            align-items: center;
+            
+           
+            
+            background-color: transparent;
+            
+          
+          
+            cursor: pointer;
+            span {
+                margin-left: 10px;
+                font-weight: 600;
+                font-size: 0.7rem;
+                color: gray;
+
+            }
+            &:hover {
+               background-color: rgb(95, 95, 236);
+              
+               
+             
+             
+            }
+            &:hover span {
+                color: white;
+            }
+            &:hover .icon {
+                color: white;
+            }
+        }
+        .title {
+            color: gray;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        }
+        .icon {
+            color: darkblue;
+        }
+    }
+
+    .buttom {
+        display: flex;
+        
+        margin-top: 30px;
+
+        .color {
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            border: 1px solid darkblue;
+            margin-left: 15px;
+            cursor: pointer;
+            &:first-child{
+                background-color: #333;
+            }
+            &:nth-child(2){
+                background-color: whitesmoke;
+            }
+        }
+    }
+}

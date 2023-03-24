@@ -1,0 +1,105 @@
+
+.single {
+width: 100vw;
+display: flex;
+.content {
+    flex: 6;
+}
+.topSingle  {
+    margin: 20px;
+    display: flex;
+    gap: 15px;
+    &.products {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+       
+    }
+    .left {
+        border-radius: 5px;
+        position: relative;
+        flex: 1;
+        padding: 20px;
+        box-shadow: 2px 2px 6px  rgb(71, 70, 70) ;
+        .edit {
+            position: absolute;
+            padding: 5px;
+            top: 0;
+            right: 0;
+            color: darkblue;
+            background-color: rgba(0, 0, 139, 0.077);
+            cursor: pointer;
+            border-radius: 0 5px 0 0 ;
+            transition: 0.4s;
+            &:hover {
+                background-color: darkblue;
+                color: white;
+            }
+        }
+        
+
+        .item {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-evenly;
+            
+            gap: 20px;
+           
+            
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                align-self: center;
+            }
+            .details {
+                .itemTitle {
+                    color: rgb(96, 96, 96);
+                    margin-bottom: 10px;
+                }
+                .detail {
+                    display: flex;
+                    gap: 5px;
+                    &:not(:last-child){
+                        margin-bottom: 10px;
+                    }
+                    .key {
+                        font-weight: bold;
+                        font-size: 0.9rem;
+
+                    }
+                    .value {
+                        font-size: 0.9rem;
+                    }
+                    color: gray;
+                }
+            }
+        }
+    }
+   
+   
+   
+   
+   
+   
+   
+   
+    .right {
+        flex : 2;
+  
+    }
+
+   
+}
+.bottom {
+    box-shadow: 2px 2px 6px  rgb(71, 70, 70) ;
+    margin-top: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+}
+
+.title {
+    color: gray;
+}

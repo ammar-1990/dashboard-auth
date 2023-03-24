@@ -1,0 +1,30 @@
+.home {
+    display: flex;
+    width: 100vw;
+   
+
+.content {
+    flex: 6;
+}
+
+.widjets,.charts {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.charts {
+    margin-top: 15px;
+}
+
+.tableContainer {
+  padding-top: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 6px  rgb(71, 70, 70) ;
+     .title {
+        color: gray;
+        width: 100%;
+        text-align: center;
+     }
+}
+}

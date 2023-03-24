@@ -1,0 +1,142 @@
+.datatable {
+    height: 500px;
+    margin: 20px;
+
+    .dataTitle {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        h3 {
+            color: rgb(92, 90, 90);
+        }
+        button {
+            padding: 10px 15px;
+            border: 1px solid darkblue;
+            background-color: white;
+            color: darkblue;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover {
+                color: white;
+                background-color: darkblue;
+            }
+        }
+    }
+
+    .cellWithImg {
+        display: flex;
+        align-items: center;
+        .cellImg {
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+       
+    }
+
+    .cellWithImg_t{
+
+        display: flex;
+        align-items: center;
+        .cellImg_t {
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+    }
+    .cellWithStatus {
+        padding: 7px;
+        border-radius: 5px;
+        &.active {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.09);
+        }
+        &.passive {
+            color: crimson;
+            background-color:rgba(220, 20, 60, 0.09);
+        }
+        &.pending {
+            color: goldenrod;
+            background-color: rgba(218, 165, 32, 0.09);
+        }
+    }
+
+    .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .viewButton {
+            padding: 3px;
+            font-size: 0.7rem;
+            border: 0.5px solid darkblue;
+            
+            border-radius: 5px;
+            
+            cursor: pointer;
+            color: darkblue;
+            position: relative;
+           
+            overflow: hidden;
+            &::after{
+                content: '';
+                position: absolute;
+                transition: 0.2s;
+                left: 0;
+            bottom: -1px;
+            width: 100%;
+            height: 0;
+            background-color: darkblue;
+            z-index: -1;
+            }
+            
+            &:hover::after  {
+                height: 110%;
+            }
+            &:hover {
+                color: white;
+            }
+          
+        }
+        .deleteButton {
+            padding: 3px;
+            font-size: 0.7rem;
+            border: 0.5px solid crimson;
+            border-radius: 5px;
+            cursor: pointer;
+            color: crimson;
+            position: relative;
+            overflow: hidden;
+            
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background-color: crimson;
+                transition: 0.2s;
+                z-index: -1;
+            }
+
+            
+            &:hover::after {
+                height: 110%;
+            }
+            &:hover {
+                color: white;
+            }
+            
+        }
+      
+    }
+}

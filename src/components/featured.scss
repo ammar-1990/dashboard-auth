@@ -1,0 +1,72 @@
+.featured {
+    flex:2;
+    box-shadow: 2px 2px 6px  rgb(71, 70, 70) ;
+    padding: 5px;
+
+    .top {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: gray;
+        .title {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+}
+
+.buttom {
+    padding: 20px;
+    .featuredChart {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+    p {
+width: 100%;
+margin-top: 20px;
+text-align: center;
+    }
+    .title {
+        color: gray;
+        font-weight: bold;
+    }
+    .amount {
+        font-size: 2rem;
+    }
+    .description {
+        color: gray;
+        font-size: 0.7rem;
+    }
+
+    .summary {
+        margin-top: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .itemTitle {
+color: gray;
+font-size: 0.7rem;
+margin-bottom: 15px;
+
+        }
+        .itemResult {
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            &.positive{
+                color: green;
+            }
+            &.negative {
+                color: red;
+            }
+        }
+    }
+}

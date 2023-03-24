@@ -1,0 +1,63 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+    
+
+   
+    form {
+        max-width: 300px;
+        padding: 40px;
+        width: 100%;
+        box-shadow: 1px 1px 4px 1px darkblue,-1px -1px 4px 1px darkblue;
+        border-radius: 4px;
+    
+
+        input {
+           padding: 5px;
+            margin-bottom: 60px;
+            outline: none;
+            &::placeholder {
+                color: rgba(0, 0, 139, 0.285);
+                transition: 0.3s;
+            }
+            &:focus::placeholder {
+                opacity: 0;
+            }
+            border: none;
+            border-bottom: 1px solid darkblue;
+            width: 100%;
+          
+        }
+        button {
+            width: 100%;
+            color: darkblue;
+            background-color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border: 1px solid darkblue;
+            transition: 0.2s;
+            &:hover {
+                background-color: darkblue;
+                color: white;
+            }
+            
+        }
+        .error {
+            color: red;
+            margin-top: 15px;
+            width: 100%;
+            text-align: center;
+        font-size: 14px;
+        }
+        .p_signing {
+            margin-top: 15px;
+            font-size: 13px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

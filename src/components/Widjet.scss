@@ -1,0 +1,58 @@
+.widjet {
+    flex: 1;
+    padding: 10px;
+    box-shadow: 2px 2px 6px  rgb(71, 70, 70) ;
+    display: flex;
+    border-radius: 7px;
+    justify-content: space-between;
+    height: 120px;
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+            color: gray;
+        }
+
+        .counter {
+            font-size: 35px;
+        }
+        .link {
+            color: gray;
+            border-bottom: 1px solid lightgray;
+            cursor: pointer;
+            font-size: 0.7rem;
+            width: max-content;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        .percentage {
+            display: flex;
+            align-items: center;
+            padding: 2px;
+            border-radius: 7px;
+            font-size: 15px;
+            font-weight: bold;
+            &.positive {
+                color: green;
+               
+            }
+            &.negative {
+                color: red;
+               
+            }
+        }
+
+        .icon {
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 30px;
+
+        }
+    }
+}

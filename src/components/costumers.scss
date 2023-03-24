@@ -1,0 +1,29 @@
+.list {
+ margin-top: 20px;
+ .productWraper {
+    display: flex;
+    align-items: center;
+    
+ }
+ img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  
+ 
+ }
+.status {
+    padding: 5px;
+    border-radius: 5px;
+    &.Approved {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.237);
+    }
+
+    &.Pending {
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.229)
+    }
+}
+ 
+}
